@@ -1,23 +1,31 @@
-// pages/index.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
+import Styles from '../styles/AirdropButton.module.css';
 
 const HomePage: React.FC = () => {
-  return (
-    <div>
-      <Header />
-      <main>
-        <h1>Rewriting The Future Of Work, Collectively</h1>
-        <p>Monetise your knowledge through the community...</p>
-        <button>Airdrop me reitokens please!</button>
-   
+    const [clicked, setClicked] = useState(false);
 
-        <div className="features">
-          {/* Feature icons and descriptions */}
+    const handleButtonClick = () => {
+        setClicked(true);
+    }
+
+    return (
+        <div>
+            <Header />
+            <main>
+                
+                <button 
+                    className={`${Styles.AirdropButton} ${clicked ? Styles.clicked : ''}`}
+                    onClick={handleButtonClick}
+                >
+                    Airdrop
+                </button>
+                <div className="features">
+                    {/* Feature icons and descriptions */}
+                </div>
+            </main>
         </div>
-      </main>
-    </div>
-  );
+    );
 }
 
 export default HomePage;

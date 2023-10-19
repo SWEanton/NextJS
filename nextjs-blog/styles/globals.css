@@ -1,5 +1,19 @@
 /* styles/styles.css */
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {
+    background-image: src('/public/images/PurpleSpace.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    animation: floatBackground 20s ease-in-out infinite;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -18,13 +32,7 @@
     }
 }
 
-body {
-    background-image: url('/public/images/PurpleSpace.png');
-    background-repeat:no-repeat;
-    background-color: blueviolet;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 .header {
     font-family: 'Arial', sans-serif;
     text-align: center;
