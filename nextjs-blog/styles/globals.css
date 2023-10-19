@@ -8,7 +8,7 @@ html, body {
 
 
 .body {
-    background-image: src('/public/images/PurpleSpace.jpeg');
+    background-image: src('/public/images/PurpleSpace.webp');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
