@@ -7,13 +7,22 @@ html, body {
 }
 
 
-.body {
-    background-image: src('/public/images/PurpleSpace.webp');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    animation: floatBackground 20s ease-in-out infinite;
+.backgroundImage {
+    animation: floatBackground 5s infinite alternate;
 }
+
+@keyframes floatBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(1%, 1%); /* Adjust these values for more or less movement */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
