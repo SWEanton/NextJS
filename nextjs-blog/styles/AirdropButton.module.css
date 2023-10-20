@@ -3,10 +3,11 @@
 
   margin-left: fixed;
   background-color: #561097;  /* default background color */
-  color: white;
-  padding: 20px 20px;
-  border-radius: 50px;
-  border: none;
+  color: rgb(255, 255, 255);
+  padding: 9px 20px;
+  border-radius: 16px;
+  border: 2px solid #561097;
+  font-size: 20px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease; /* transition for smooth animation */
 }
