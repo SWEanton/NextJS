@@ -8,7 +8,7 @@ const Header: React.FC = () => {
           <header className={styles.header}>
               <div>
                   <img src="/images/reinvent-logo.png" alt="Reinvent Logo" className={styles.logo} />
-                  <div className={styles.tagline}>Rewriting the Future of Work, Collectively</div>
+                  <div className={styles.tagline}>Reinvent DAO presents $REI Token Airdrop</div>
               </div>
               <DropdownMenu />
               <nav>
