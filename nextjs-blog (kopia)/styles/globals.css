@@ -1,0 +1,58 @@
+/* styles/styles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.backgroundImage {
+    animation: floatBackground 5s infinite alternate;
+}
+
+@keyframes floatBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(1%, 1%); /* Adjust these values for more or less movement */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+n
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@keyframes floatBackground {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 30px 30px; /* This determines how far the image moves */
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+
+.header {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    margin-top: 40px;
+}
+
+.section {
+    margin-bottom: 20px;
+}

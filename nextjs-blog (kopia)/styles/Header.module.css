@@ -1,0 +1,61 @@
+/* Header.module.css */
+
+.logo {
+    width: 20%; 
+    max-width: 300px;
+    min-width: 100px;
+    height: auto; 
+    position: relative; 
+    margin-bottom: 20px;
+    left:-35%;
+}
+
+.tagline {
+    margin-top:40px;
+    color: #D2D2DF;
+    font-size: 50px;
+    font-family: Sora;
+    font-weight: 550;
+    line-height: 34px;
+    word-wrap: break-word;
+    left:-35%;
+}
+
+/* Use media queries for finer control */
+@media (max-width: 600px) {
+    .logo {
+        width: 40%; /* Adjust the percentage as needed for mobile sizes. */
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 60%; /* Adjust for very small screens. */
+    }
+}
+
+/* Rest of the CSS remains the same */
+
+  
+.header {
+    background-color: transparent;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); /* Adding a subtle shadow for depth */
+}
+
+.header h1 {
+    color: #1A1A2E; /* Dark color for main title */
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.header span {
+    color: #7A7A8C; /* Light grey for subtitle */
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+}
+

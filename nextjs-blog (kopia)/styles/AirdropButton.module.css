@@ -1,0 +1,23 @@
+
+.AirdropButton {
+
+  margin-left: fixed;
+  background-color: #561097;  /* default background color */
+  color: rgb(255, 255, 255);
+  padding: 9px 20px;
+  border-radius: 16px;
+  border: 2px solid #561097;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* transition for smooth animation */
+}
+
+
+.AirdropButton:hover {
+  transform: scale(1.05); /* enlarge button a little */
+  background-color: #05101c;  /* slightly darker on hover */
+}
+
+.AirdropButton:active, .clicked {
+  background-color: #130070;  /* even darker when active or clicked */
+}
